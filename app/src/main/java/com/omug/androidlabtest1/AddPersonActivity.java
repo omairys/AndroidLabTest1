@@ -95,6 +95,7 @@ public class AddPersonActivity extends AppCompatActivity {
         // onPostExecute runs on main thread
         @Override
         protected void onPostExecute(Boolean bool) {
+            Log.w("Bool ", "onPostExecute----------------------: " + bool);
             if (bool) {
                 activityReference.get().setResult(person, 1);
                 activityReference.get().finish();
