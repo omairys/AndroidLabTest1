@@ -43,14 +43,14 @@
         app:layout_constraintStart_toStartOf="@+id/inputAge"
         app:layout_constraintTop_toBottomOf="@+id/inputAge" />
 
-    <EditText
+    <TextView
         android:id="@+id/intputStartDate"
         android:layout_width="383dp"
         android:layout_height="48dp"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Term start date (YYYY-MM-DD)"
-        android:inputType="date"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/inputTuition"
         app:layout_constraintStart_toStartOf="@+id/inputTuition"
         app:layout_constraintTop_toBottomOf="@+id/inputTuition" />

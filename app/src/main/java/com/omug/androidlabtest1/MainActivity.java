@@ -12,6 +12,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -128,6 +129,7 @@ public class MainActivity extends AppCompatActivity implements PersonAdapter.OnP
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        Log.e("resultCode ", "onActivityResult: " + resultCode +" "+ requestCode);
         if (requestCode == 100 && resultCode > 0) {
             if (resultCode == 1) {
                 persons.add((Person) data.getSerializableExtra("person"));
